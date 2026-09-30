@@ -26,8 +26,8 @@ Display is very stable on standard monitor.
 # What doesn't
 
 - Blinking cursor — a static `>` marker is drawn instead
-- Cartridge / tape loading** — not supported.
-- Keyboard glitch
+- Cartridge / tape loading — not supported.
+- Keyboard glitch :
  — typing briefly shifts the screen horizontally.
 
 # Hardware
@@ -152,7 +152,7 @@ MCU's internal EEPROM.
 - The main code is derived from Jan Ostman Published February 3, 2014
 	https://www.hackster.io/janost/the-nano-vic-20-e37b39
 	https://github.com/mganthon/nanoVIC-20
-(but code is buggy, not running on modern IDE v2.x, no save/load, no keybpard)
+(but code is buggy, not running on modern IDE v2.x, no save/load, no keyboard)
 - Commodore 64 emulator sketch by Doctor Volt
 	https://github.com/michalin/Arduino-C64-Emulator
 
