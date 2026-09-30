@@ -84,25 +84,37 @@ Total: under $15.
 Type BASIC commands as on a real VIC-20:
 
 10 PRINT "HELLO"
+
 20 FOR I = 1 TO 10
+
 30 PRINT I
+
 40 NEXT I
+
 RUN
 
 Sound
 
 10 POKE 36878, 15    : REM volume
+
 20 POKE 36876, 240   : REM pitch
+
 30 FOR D = 1 TO 500  : NEXT D
+
 40 POKE 36876, 0     : REM stop
+
 RUN
 
 # Save / Load
 
 Press SAVE button once, wait 2 s → slot 1
+
 Press SAVE button twice, wait 2 s → slot 2
+
 ...
+
 Press SAVE button nine times, wait 2 s → slot 9
+
 
 Same for LOAD. Bottom row shows SAVED SLOT n / LOADED SLOT n.
 
@@ -111,6 +123,7 @@ Clear screen : Press Escape (mapped to PETSCII CLR).
 # Known limitations
 
   Keyboard glitch
+  
   97% of the ATmega328P's flash is used.
 
 # How it works
@@ -138,7 +151,8 @@ MCU's internal EEPROM.
 - Author : Christian Bosch - 2026 - "Lets be honest, AI did most of the job !"
 - The main code is derived from Jan Ostman Published February 3, 2014
 	https://www.hackster.io/janost/the-nano-vic-20-e37b39
-	https://github.com/mganthon/nanoVIC-20 and
+	https://github.com/mganthon/nanoVIC-20
+(but code is buggy, not running on modern IDE v2.x, no save/load, no keybpard)
 - Commodore 64 emulator sketch by Doctor Volt
 	https://github.com/michalin/Arduino-C64-Emulator
 
